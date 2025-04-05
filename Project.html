@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce Website</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+     <style>
+        
+        *{
+            padding: 0px;
+            margin: 0%;
+        }
+        header{
+            
+            display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 10px 40px;
+           background-color: rgb(255, 255, 255);
+        }
+        header img{
+            margin-left: 20px;
+        }
+        h2{
+            display: inline;
+            color: rgb(76, 76, 213);
+            
+        }
+        form{
+            display:inline-flex;
+            margin-left: 300px;
+            border-radius: 10px;
+            border: 3px solid blue;
+        }
+        input{
+            padding: 10px;
+            display:inline-flex;
+            border: transparent;
+            border: 1px solid blue;
+        }
+        #Searchs{
+            width: 400px;
+            border: transparent;
+        }
+        select{
+            border: 1px solid blue;
+            
+        }
+        #btns{
+            width: 100px;
+            background-color: blue;
+            color: white;
+        }
+        ul{
+            display: inline;
+            margin-left: 100px;
+            
+        }
+        li{
+            display: inline;
+            
+            align-items: center;
+            
+        }
+        a{
+            display: inline;
+            text-decoration-line: none;
+            color: grey;
+            
+        }
+        img{
+            height: 40px;
+            width: 40px;
+            
+            
+        }
+        #navs{
+           margin-left: 100px;
+           padding: 10px;
+        }
+        #navs a{
+           padding: 10px;
+        }
+        #help{
+            border: transparent;
+        }
+        #english{
+            margin-left: 450px;
+            border: transparent;
+        }
+        #ship{
+            width: 170px;
+            padding: 10px;
+            font-size: 16px;
+            background: url('images/usa.jpg') no-repeat left center;
+            background-size: 20px;
+            padding-left: 30px;
+            border: transparent;
+        }
+        #other{
+            padding: 0%;
+            margin: 1%;
+            border: transparent;
+            margin-left: 50px;
+            
+        }
+        #categories{
+            border: transparent;
+            padding: 0%;
+        
+        }
+        #threes{
+            width: 15px;
+            height: 15px;
+        }
+        #navs a{
+            color: black;
+        }
+        #logo{
+            padding: 0%;
+            
+        }
+        #maingate {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(244, 251, 252);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 90%;
+    height: 400px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(178, 173, 173);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#categ {
+    width: 15%;
+    height: 400px;
+    padding: 10px;
+}
+
+#categ a {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    display: block;
+    padding: 3px 0;
+}
+
+#categ a:hover {
+    background-color: rgb(233, 252, 254);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#imgss {
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#imgss img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#im {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: 0%;
+}
+#Brands h1{
+    color: rgb(65, 65, 230);
+}
+#Brands{
+    padding: 10px;
+    margin-left: 40px;
+}
+#mainss{
+    display: flex;
+    padding: 20px;
+}
+#About{
+    margin-left: 70px;
+    width: 170px;
+}
+#Partnership{
+    margin-left: 10px;
+    width: 170px;
+}
+#Information{
+    margin-left: 40px;
+    width: 170px;
+}
+#forusers{
+    margin-left: 40px;
+    width: 170px;
+}
+#mainss h2{
+    color: black;
+    padding: 0%;
+    margin:0%;
+
+}
+#mainss h3{
+    color: rgb(152, 151, 151);
+    font-weight: 300;
+}
+#Brands h4{
+    font-weight: 300;
+}
+footer{
+    
+}
+
+#Getapp img{
+    width: 100px;
+    
+}
+#brands{
+    display: inline-flex;
+    
+}
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo img {
+    width: 50px;
+    height: auto;
+}
+
+.brand-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+#mainss h2{
+    font-weight: 100;
+    font-size: 22px;
+}
+#foot{
+    background-color: rgb(233, 244, 247);
+    height: 70px;
+    color: rgb(105, 106, 107);
+    align-items: center;
+    padding: 10px;
+}
+#foot h4{
+    align-items: center;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+#partone a {
+    display: inline-block; 
+    text-align: center;
+    text-decoration: none; 
+    font-weight: bold;
+}
+#parttwo img{
+    width: 220px;
+    height: 100px;
+}
+#partthree img{
+    width: 220px;
+    height: 100px;
+}
+#partone {
+    background-color: rgb(197, 227, 250);
+    width: 220px;
+    height: 190px;
+    border-radius: 10px;
+    
+}
+#main{
+    padding: 8px;
+}
+#sec{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+#join-btn {
+    background-color: rgb(47, 47, 251);
+    color: white;
+    padding: 8px; 
+    width: 180px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#login-btn {
+    background-color: rgb(255, 255, 255);
+    color:rgb(17, 17, 248);
+    padding: 9px ; 
+    border-radius: 10px;
+    width: 180px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+#section1{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(244, 251, 252);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#sects{
+    width: 90%;
+    height: 200px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(178, 173, 173);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    
+}
+#sect1 h4{
+    color: rgb(161, 159, 159);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 10;
+    font-size: 14px;
+}
+#section2 img{
+    width: 100%;
+    height: 200px;
+}
+#section3 img{
+    width: 100%;
+    height: 200px;
+}
+#section4 img{
+    width: 100%;
+    height: 200px;
+}
+#section5 img{
+    width: 100%;
+    height: 200px;
+}
+#section6 img{
+    width: 100%;
+    height: 200px;
+}
+#block{
+    animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.block{
+    animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes scrolling {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+#ali{
+    background-color: rgb(244, 251, 252);
+    padding: 20px;
+}
+.containerd {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    
+    max-width: 1100px;
+    margin: auto;
+        }
+        .category-card {
+            width: 250px;
+        
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            border-radius: 8px;
+        }
+        .category-card img {
+            width: 250px;
+            height: 350px;
+        }
+       
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            flex: 1;
+        }
+        .product-card {
+            
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            width: 150px;
+            height: 110px;
+        }
+        .containers {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    
+    max-width: 1100px;
+    margin: auto;
+        }
+        .category-cards {
+            width: 250px;
+        
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            border-radius: 8px;
+        }
+        .category-cards img {
+            width: 250px;
+            height: 350px;
+        }
+       
+        .productss {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            flex: 1;
+        }
+        .product-cards {
+            
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-cards img {
+            width: 150px;
+            height: 110px;
+        }
+        .container {
+            width: 75%;
+            height: 500px;
+            margin: 20px auto;
+            
+        }
+       
+        .quote-section {
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(to right, #1e88e5, #42a5f5);
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+        }
+        .quote-section .text {
+            max-width: 50%;
+        }
+        .quote-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 40%;
+        }
+        .quote-form input, .quote-form textarea, .quote-form select {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .quote-form button {
+            width: 100%;
+            padding: 10px;
+            background: #1e88e5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .recommended {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .recommendeds{
+            margin-left: 200px;
+            
+        }
+        .recommendeds h4{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .imagess{
+            display: inline-flex;
+            width: 70%;
+            
+            
+        }
+        .imagess img{
+            padding: 30px;
+            width: 100%;
+            height: 250px;
+           
+        }
+        .last{
+            background-color: rgb(228, 236, 235);
+            height: 200px;
+
+        }
+        .lasta{
+             text-align: center;
+        }
+        .last h3{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .last p{
+            color: rgb(70, 68, 68);
+        }
+        .lastb input {
+          border-radius: 10px;
+          width: 20%;
+          color: rgb(105, 105, 105);
+          border: 1px solid grey;
+        }
+        .lastb a{
+            width: 25%;
+            padding: 10px;
+            background-color: rgb(21, 82, 238);
+            color: white;
+            border-radius: 10px;
+        }
+
+     </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo-symbol.png" alt="">
+        <h2>Brand</h2>
+        <form action="">
+            <input id="Searchs" type="search" placeholder="Search">
+            <select name="" id="othercategories" >
+                <option value="">All categories</option>
+                <option value="">Shirts</option>
+                <option value="">Pents</option>
+                <option value="">Trousers</option>
+                <input id="btns" type="submit" value="Search">
+            </select>
+        </form>
+        
+        <ul>
+        <li><a href="#"><img src="images/alis.png" alt="AliExpress"></a></li>
+        <li><a href="#"><img src="images/messages.png" alt="Messages"></a></li>
+        <li><a href="#"><img src="images/order.png" alt="Orders"></a></li>
+        <li><a href="#"><img src="images/cart.png" alt="Cart"></a></li>
+    </ul>
+          
+    </header>
+    <script>
+        
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            console.log('Search submitted: ', document.getElementById('Searchs').value);
+        });
+    </script>
+
+    <hr>
+    <nav>
+        <form action="" id="other" class="block">
+            <img id="threes" src="images/three.png" alt="" >
+            <select name="" id="categories">
+                <option value="">All categories</option>
+                <option value="">Shirts</option>
+                <option value="">Pents</option>
+                <option value="">Caps</option>
+                <option value="">Watches</option>
+            </select>
+            
+        </form>
+        <ul id="navs">
+            <a href=""><li>Hot Offers</li></a>
+           <a href=""><li>Gift Boxes</li></a>
+            <a href=""><li>Projects</li></a>
+           <a href=""> <li>Menu item</li></a>
+        </ul>
+        <select name="" id="help" >
+            <option value="">Help</option>
+            <option value="">About</option>
+        </select>
+        <select name="" id="english" >
+            <option value="">English,USD</option>
+            <option value="">urdu</option>
+            <option value="">German</option>
+            <option value="">British</option>
+        </select>
+        <select id="ship" onchange="updateFlag(this)">
+            <option value="images/usa.jpg" data-image="images/usa.jpg">🇺🇸 Ship to USA</option>
+            <option value="images/uk.png" data-image="images/uk.png">🇬🇧 Ship to UK</option>
+            <option value="images/pak.png" data-image="images/pak.png">🇵🇰 Ship to Pakistan</option>
+            <option value="images/china.png" data-image="images/china.png">🇨🇳 Ship to China</option>
+        </select>
+        <script>
+            function updateFlag(selectElement) {
+                let selectedOption = selectElement.options[selectElement.selectedIndex];
+                let imageUrl = selectedOption.getAttribute("data-image");
+                selectElement.style.background = `url('${imageUrl}') no-repeat left center`;
+                selectElement.style.backgroundSize = "20px";
+                selectElement.style.paddingLeft = "30px";
+            }
+            function sendInquiry() {
+            alert("Inquiry sent to the supplier!");
+        }
+        </script>
+    </nav>
+    
+    <hr>
+    <div id="maingate" class="block">
+    <section>
+        <div id="categ" class="block">
+            <a href="">Automobiles</a><br>
+            <a href="">Clothes and wear</a><br>
+            <a href="">Home interiors</a><br>
+            <a href="">Computer and tech</a><br>
+            <a href="">Tools,equipments</a><br>
+            <a href="">Sports and outdoor</a><br>
+            <a href="">Animal and pets</a><br>
+            <a href="">Machinery tools</a><br>
+            <a href="">More category</a>
+
+        </div>
+        <div id="imgss" class="block">
+            <div id="im"><img src="images/banner.png" alt=""><a href=""></a></div>
+        </div>
+        <div id="main">
+            <div id="partone" class="block">
+                <div id="sec"><img src="images/Avatar.png" alt=""><h3>Hi,user <br> let's get started</h3></div>
+                <br><a id="join-btn" href="">Join now</a><br> <br>
+                <a id="login-btn" href="">Log in</a><br><br>
+
+            </div><br>
+            <div id="parttwo" class="block">
+            <img src="images/block (1).png" alt="">
+            </div>
+            <div id="partthree">
+ <img src="images/block.png" alt="">
+            </div>
+        </div>
+
+
+    </section></div>
+
+    <div id="section1">
+        <div id="sects" class="block">
+        <div id="sect1" class="block">
+            <h3>Deals and offers</h3>
+            <h4>Hygiene equipments</h4>
+            <div><br>
+                <div>
+                    <img src="images/Group 971.png" alt="">
+                    <img src="images/Group 972.png" alt="">
+                    <img src="images/Group 973.png" alt="">
+                    <img src="images/Group 974.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div id="section2" class="block">
+          <a href="main.html"> <img src="images/Item.png" alt=""></a> 
+            
+        </div>
+        <div id="section3" class="block"> 
+         <a href="main.html"> <img src="images/Item (1).png" alt=""></a> 
+        </div>
+        <div id="section4" class="block">
+         <a href="main.html"> <img src="images/Item (2).png" alt=""></a> 
+        </div>
+        <div id="section5" class="block">
+           <a href="main.html"><img src="images/Item (3).png" alt=""></a> 
+        </div>
+        <div id="section6" class="block">
+         <a href="main.html">  <img src="images/Item (4).png" alt=""></a> 
+        </div>
+    </div>
+    </div>
+    <div id="ali">
+
+    
+    <div class="containerd"  id="block">
+        <div class="category-card" id="block">
+          <a href="main.html">  <img src="images/left-aside.png" alt=""></a>
+            
+        </div>
+        <div class="products"  id="block">
+            <div class="product-card"  id="block">
+              <a href="main.html">  <img src="images/New folder/Item (5).png" alt="Soft Chairs"></a>
+                
+            </div>
+            <div class="product-card"  id="block">
+             <a href="main.html">  <img src="images/New folder/Item (6).png" alt="Sofa & Chair"></a>
+                
+            </div>
+            <div class="product-card"  id="block">
+              <a href="main.html"> <img src="images/New folder/Item (7).png" alt="Kitchen Dishes"></a>
+                
+            </div>
+            <div class="product-card"  id="block">
+             <a href="main.html">   <img src="images/New folder/Item (8).png "alt="Smart Watches">
+                
+            </div>
+            <div class="product-card"  id="block">
+               <a href="main.html"> <img src="images/Item (6).png" alt="Kitchen Mixer"></a>
+                
+            </div>
+            <div class="product-card"  id="block">
+              <a href="main.html"> <img src="images/Item (8).png" alt="Blenders"></a>
+                
+            </div>
+            <div class="product-card"  id="block">
+               <a href="main.html"><img src="images/Item (5).png" alt="Home Appliance"></a>
+               
+            </div>
+            <div class="product-card"  id="block">
+             <a href="main.html">   <img src="images/Item (7).png" alt="Coffee Maker"></a>
+                
+            </div>
+        </div>
+    </div><br><br>
+    <div class="containers"  id="block">
+        <div class="category-cards"  id="block">
+          <a href="main.html">  <img src="images/New folder (2)/left-side.png" alt=""></a>
+            
+        </div>
+        <div class="productss"  id="block">
+            <div class="product-cards"  id="block">
+            <a href="main.html">    <img src="images/New folder (2)/Item (9).png" alt="Soft Chairs"></a>
+                
+            </div>
+            <div class="product-cards"  id="block">
+              <a href="main.html">  <img src="images/New folder (2)/Item (10).png" alt="Sofa & Chair"></a>
+                
+            </div>
+            <div class="product-cards"  id="block">
+              <a href="main.html">  <img src="images/New folder (2)/Item (11).png" alt="Kitchen Dishes"></a>
+                
+            </div>
+            <div class="product-cards"  id="block">
+               <a href="main.html"> <img src="images/New folder (2)/Item (12).png "alt="Smart Watches"></a>
+                
+            </div>
+            <div class="product-cards"  id="block">
+             <a href="main.html">  <img src="images/New folder (2)/Item (13).png" alt="Kitchen Mixer"></a>
+                
+            </div>
+            <div class="product-cards"  id="block">
+              <a href="main.html"> <img src="images/New folder (2)/Item (14).png" alt="Blenders"></a>
+                
+            </div>
+            <div class="product-cards"  id="block"> 
+             <a href="main.html">   <img src="images/New folder (2)/Item (15).png" alt="Home Appliance"></a>
+               
+            </div>
+            <div class="product-cards"  id="block">
+             <a href="main.html">  <img src="images/New folder (2)/Item (16).png" alt="Coffee Maker"></a>
+                
+            </div>
+        </div>
+    </div>
+<br><br>
+
+<div class="container"  id="block">
+    
+    <div class="quote-section"  id="block">
+        
+        
+        <div class="text" id="block">
+            <h2>An easy way to send requests to all suppliers</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="quote-form" id="block">
+            <input type="text" placeholder="What item you need?">
+            <textarea placeholder="Type more details"></textarea>
+            <div style="display: flex; gap: 10px;">
+                <input type="number" placeholder="Quantity">
+                <select>
+                    <option>Pcs</option>
+                    <option>Kg</option>
+                    <option>Liters</option>
+                </select>
+            </div>
+            <button onclick="sendInquiry()">Send Inquiry</button>
+        </div>
+    </div>
+</div>
+
+         <div class="recommendeds" id="block">
+            <h3>Recommended items</h3>
+            <div class="imagess">
+            <div class="image1">
+            <a href="main.html">   <img src="images/as.png" alt=""></a>
+            </div>
+            <div class="image2">
+              <a href="main.html"> <img src="images/item-home-sm.png" alt=""></a>
+            </div>
+            <div class="image3"> 
+               <a href="main.html"><img src="images/New folder/item-home-sm.png" alt=""></a>
+            </div>
+            <div class="image4">
+               <a href="main.html"><img src="images/New folder (2)/item-home-sm.png" alt=""></a>
+            </div>
+            <div class="image5">
+              <a href="main.html"> <img src="images/New folder (2)/New folder/item-home-sm.png" alt=""></a>
+            </div>
+        </div>
+        <div class="imagess" id="block">
+            <div class="image1">
+              <a href="main.html"> <img src="images/w.png" alt=""></a>
+            </div>
+            <div class="image2">
+               <a href="main.html"> <img src="images/v.png" alt=""></a>
+            </div>
+            <div class="image3"> 
+              <a href="main.html"> <img src="images/x.png" alt=""></a>
+            </div>
+            <div class="image4">
+              <a href="main.html"> <img src="images/y.png" alt=""></a>
+            </div>
+            <div class="image5">
+             <a href="main.html">  <img src="images/z.png" alt=""></a>
+            </div>
+        </div>
+         </div>
+
+</div>
+<div class="last" id="block">
+    <div class="lasta"><br><br>
+        <h3>Subscribe on our newsletter</h3>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        <div class="lastb"><br>
+            <input type="text" value="Email">
+            <a href="">Subscribe</a>
+        </div>
+    </div>
+</div><br><br><br>
+    <footer >
+        <div id="mainss">
+        <div id="Brands" >
+            <div class="brand-logo">
+                <a href="#"><img src="images/logo-symbol.png" alt="Brand Logo"></a>
+                <h1>Brand</h1>
+            </div>
+            <h4>Best information about the company <br> gies here but now lorem ipsum is</h4>
+            <div class="social-icons"><br>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+
+        </div>
+        <div id="About" >
+            <h2>About</h2>
+            <h3>About Us</h3>
+            <h3>Find store</h3>
+            <h3>Categories</h3>
+            <h3>Blogs</h3>
+        </div>
+        <div id="Partnership" >
+            <h2>Partnership</h2>
+            <h3>About Us</h3>
+            <h3>Find store</h3>
+            <h3>Categories</h3>
+            <h3>Blogs</h3>
+        </div>
+        <div id="Information" >
+            <h2>Information</h2>
+            <h3>Help Center</h3>
+            <h3>Find store</h3>
+            <h3>Shipping</h3>
+            <h3>Contact us</h3>
+        </div>
+        <div id="forusers" >
+            <h2>For users</h2>
+            <h3>Login</h3>
+            <h3>Register</h3>
+            <h3>Settings</h3>
+            <h3>My Orders</h3>
+        </div>
+        <div id="Getapp" >
+            <h2>Get app</h2><br>
+            <a href=""><img src="images/market-button.png" alt=""></a><br>
+            <a href=""><img src="images/market-button1.png" alt=""></a>
+        </div>
+    </div><br><br><br>
+    </footer>
+    <div id="foot">
+        <h4 >© 2023 Ecommerce. </h4>
+
+    </div>
+</body>
+</html>

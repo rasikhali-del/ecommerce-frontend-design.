@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce Website</title>
+    <style>
+         *{
+            padding: 0px;
+            margin: 0%;
+        }
+        header{
+            
+            display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 10px 40px;
+           background-color: rgb(255, 255, 255);
+        }
+        header img{
+            margin-left: 20px;
+        }
+        h2{
+            display: inline;
+            color: rgb(76, 76, 213);
+            
+        }
+        form{
+            display:inline-flex;
+            margin-left: 300px;
+            border-radius: 10px;
+            border: 3px solid blue;
+        }
+        input{
+            padding: 10px;
+            display:inline-flex;
+            border: transparent;
+            border: 1px solid blue;
+        }
+        #Searchs{
+            width: 400px;
+            border: transparent;
+        }
+        select{
+            border: 1px solid blue;
+            
+        }
+        #btns{
+            width: 100px;
+            background-color: blue;
+            color: white;
+        }
+        ul{
+            display: inline;
+            margin-left: 100px;
+            
+        }
+        li{
+            display: inline;
+            
+            align-items: center;
+            
+        }
+        a{
+            display: inline;
+            text-decoration-line: none;
+            color: grey;
+            
+        }
+        img{
+            height: 40px;
+            width: 40px;
+            
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            
+        }
+        .cart-container {
+            
+            width: 1200px;
+            display: inline-flex;
+            margin-left: 100px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cart-container h2{
+            color:black;
+        }
+        .cart-item {
+            
+            
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item img {
+            border: 1px solid black;
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .item-details {
+            flex: 1;
+        }
+        .product-name {
+            font-weight: bold;
+        }
+        .save-btn{
+            margin-left: 200px;
+        }
+        .remove-btn, .save-btn, .apply-btn, .checkout-btn {
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .back-btn{
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 20px;
+            color: white;
+            margin-left: 200px;
+        }
+        .save-btn {
+            background-color: #007bff;
+            color: white;
+        }
+        .checkout-container {
+            width: 500px;
+            height: 400px;
+            margin-top: 20px;
+            background: #f4f4f4;
+            margin-left: 200px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .coupon input {
+            padding: 8px;
+            width: 70%;
+            margin-right: 10px;
+        }
+        .apply-btn {
+            background-color: #007bff;
+            color: white;
+            
+        }
+        .checkout-btn {
+            background-color: #28a745;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .summary p {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+        }
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #foot{
+    background-color: rgb(233, 244, 247);
+    height: 70px;
+    color: rgb(105, 106, 107);
+    align-items: center;
+    padding: 10px;
+}
+#foot h4{
+    align-items: center;
+    margin-left: 100px;
+    padding: 10px;
+}
+#mainss h2{
+    color: black;
+    padding: 0%;
+    margin:0%;
+
+}
+#mainss h3{
+    color: rgb(152, 151, 151);
+    font-weight: 300;
+}
+#Brands h4{
+    font-weight: 300;
+}#mainss{
+    display: flex;
+    padding: 20px;
+}
+#About{
+    margin-left: 70px;
+    width: 170px;
+}
+#Partnership{
+    margin-left: 10px;
+    width: 170px;
+}
+#Information{
+    margin-left: 40px;
+    width: 170px;
+}
+#forusers{
+    margin-left: 40px;
+    width: 170px;
+}footer{
+    
+}
+
+#Getapp img{
+    width: 100px;
+    
+}
+#brands{
+    display: inline-flex;
+    
+}
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo img {
+    width: 50px;
+    height: auto;
+}
+
+.brand-logo h1 {
+    color: #007bff;
+    font-size: 24px;
+    margin: 0;
+}
+#mainss h2{
+    font-weight: 100;
+    font-size: 22px;
+}
+#navs{
+           margin-left: 100px;
+           padding: 10px;
+        }
+        #navs a{
+           padding: 10px;
+        }
+        #help{
+            border: transparent;
+        }
+        #english{
+            margin-left: 450px;
+            border: transparent;
+        }
+        #ship{
+            width: 170px;
+            padding: 10px;
+            font-size: 16px;
+            background: url('images/usa.jpg') no-repeat left center;
+            background-size: 20px;
+            padding-left: 30px;
+            border: transparent;
+        }
+        #other{
+            padding: 0%;
+            margin: 1%;
+            border: transparent;
+            margin-left: 50px;
+            
+        }
+        #categories{
+            border: transparent;
+            padding: 0%;
+        
+        }
+        #threes{
+            width: 15px;
+            height: 15px;
+        }
+        #navs a{
+            color: black;
+        }
+        #logo{
+            padding: 0%;
+            
+        }
+        .recommendeds{
+            display: flex;
+            background: white;
+            margin-left: 160px;
+            width: 1150px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        .recommendeds h3{
+            font-family:Arial, Helvetica, sans-serif;
+           
+        }
+        .imagess{
+            display: inline-flex;
+            width: 80%;
+            
+            
+            
+        }
+        .imagess img{
+            padding: 30px;
+            width: 100%;
+            height: 250px;
+           
+        }
+        .lastss {
+    background: linear-gradient(to right, rgb(0, 123, 255), rgb(16, 16, 138));
+    width: 75%;
+    padding: 30px;
+    margin-left: 160px;
+    border-radius: 10px;
+    color: white;
+}
+.lastss h2{
+    color: white;
+}
+.lastss p{
+    color: rgb(149, 148, 148);
+}
+.lasta a{
+    color: white;
+    margin-left: 960px;
+    background-color:#f39c12;
+    padding: 10px;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo-symbol.png" alt="">
+        <h2>Brand</h2>
+        <form action="">
+            <input id="Searchs" type="search" placeholder="Search">
+            <select name="" id="othercategories" >
+                <option value="">All categories</option>
+                <option value="">Shirts</option>
+                <option value="">Pents</option>
+                <option value="">Trousers</option>
+                <input id="btns" type="submit" value="Search">
+            </select>
+        </form>
+        
+        <ul>
+        <li><a href="#"><img src="images/alis.png" alt="AliExpress"></a></li>
+        <li><a href="#"><img src="images/messages.png" alt="Messages"></a></li>
+        <li><a href="#"><img src="images/order.png" alt="Orders"></a></li>
+        <li><a href="#"><img src="images/cart.png" alt="Cart"></a></li>
+    </ul>
+          
+    </header>
+    <script>
+        
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            console.log('Search submitted: ', document.getElementById('Searchs').value);
+        });
+    </script>
+    <hr>
+<br><br>
+
+    <div class="cart-container">
+       
+        <div class="cart-items">
+            <div class="cart-item">
+                <h2>My cart (3)</h2><br><br><br><br>
+                <img src="images/Item (6).png" alt="Product">
+                <div class="item-details">
+                    <p class="product-name">T-shirts with multiple colors, for men and lady</p>
+                    <p class="product-info">Size: medium, Color: blue, Material: Plastic</p>
+                    <p class="seller">Seller: Artel Market</p>
+                    <button class="remove-btn">Remove</button>
+                    <button class="save-btn">Save for later</button>
+                </div>
+                <div class="price-qty">
+                    <p class="price">$78.99</p>
+                    <select class="qty">
+                        <option>Qty: 9</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="images/Item (4).png" alt="Product">
+                <div class="item-details">
+                    <p class="product-name">T-shirts with multiple colors, for men and lady</p>
+                    <p class="product-info">Size: medium, Color: blue, Material: Plastic</p>
+                    <p class="seller">Seller: Best Factory LLC</p>
+                    <button class="remove-btn">Remove</button>
+                    <button class="save-btn">Save for later</button>
+                </div>
+                <div class="price-qty">
+                    <p class="price">$39.00</p>
+                    <select class="qty">
+                        <option>Qty: 3</option>
+                    </select>
+                    <br><br>
+                    
+                    <a class="back-btn" href="main.html">← Back to shop</a>
+
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="checkout-container">
+            <div class="coupon">
+                <input type="text" placeholder="Add coupon">
+                <button class="apply-btn">Apply</button>
+            </div>
+            <div class="summary">
+                <p>Subtotal: <span>$1403.97</span></p>
+                <p>Discount: <span class="discount">- $60.00</span></p>
+                <p>Tax: <span class="tax">+ $14.00</span></p>
+                <p class="total">Total: <strong>$1357.97</strong></p>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+<br>
+<div class="recommendeds" id="block">
+    <h3>Saved for later</h3>
+    <div class="imagess">
+    <div class="image1">
+        <img src="images/as.png" alt="">
+    </div>
+    <div class="image2">
+        <img src="images/item-home-sm.png" alt="">
+    </div>
+    <div class="image3"> 
+        <img src="images/New folder/item-home-sm.png" alt="">
+    </div>
+    <div class="image4">
+        <img src="images/New folder (2)/item-home-sm.png" alt="">
+    </div>
+    <div class="image5">
+        <img src="images/New folder (2)/New folder/item-home-sm.png" alt="">
+    </div>
+</div>
+
+</div>
+<br>
+    <div class="lastss">
+        <h2>Super discount on more than 100 USD</h2>
+        <p>Have you ever finally just write dummy info</p>
+        <div class="lasta">
+    <a href="">Shop now</a>
+        </div>
+    </div>
+    <br><br><br>
+
+
+
+    <hr>
+        <footer >
+            <div id="mainss">
+            <div id="Brands" >
+                <div class="brand-logo">
+                    <a href="#"><img src="images/logo-symbol.png" alt="Brand Logo"></a>
+                    <h1>Brand</h1>
+                </div>
+                <h4>Best information about the company <br> gies here but now lorem ipsum is</h4>
+                <div class="social-icons"><br>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+    
+            </div>
+            <div id="About" >
+                <h2>About</h2>
+                <h3>About Us</h3>
+                <h3>Find store</h3>
+                <h3>Categories</h3>
+                <h3>Blogs</h3>
+            </div>
+            <div id="Partnership" >
+                <h2>Partnership</h2>
+                <h3>About Us</h3>
+                <h3>Find store</h3>
+                <h3>Categories</h3>
+                <h3>Blogs</h3>
+            </div>
+            <div id="Information" >
+                <h2>Information</h2>
+                <h3>Help Center</h3>
+                <h3>Find store</h3>
+                <h3>Shipping</h3>
+                <h3>Contact us</h3>
+            </div>
+            <div id="forusers" >
+                <h2>For users</h2>
+                <h3>Login</h3>
+                <h3>Register</h3>
+                <h3>Settings</h3>
+                <h3>My Orders</h3>
+            </div>
+            <div id="Getapp" >
+                <h2>Get app</h2><br>
+                <a href=""><img src="images/market-button.png" alt=""></a><br>
+                <a href=""><img src="images/market-button1.png" alt=""></a>
+            </div>
+        </div><br><br><br>
+        </footer>
+        <div id="foot">
+            <h4 >© 2023 Ecommerce. </h4>
+    
+        </div>
+</body>
+</html>
